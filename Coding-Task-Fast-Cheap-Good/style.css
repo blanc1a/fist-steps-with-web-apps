@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+}
+.flexen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+}
+.checkBox {
+  width: 20px;
+  height: 20px;
+}
