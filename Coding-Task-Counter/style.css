@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 0.18rem 0.18rem 0 white;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.counterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s background-size ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.colorBox {
+  position: relative;
+  left: 0;
+  height: 100%;
+  /*width für die breite der seite*/
+  /*--colorCounter, um wert dynamisch festzulegen*/
+  /*ist der wert für --colorCounter definiert, wird der wert als breite verwendet*/
+  /*0% => standardwert, der verwendet wird, wenn --colorCounter nicht definiert ist*/
+  /*--colorCounter variable kann an anderer stelle im stylesheet oder über JS gesetzt werden, um die breite des elements zu steuern*/
+  width: var(--colorCounter, 0%);
+  background-color: gold;
+}
+
+label {
+  font-size: 5rem;
+}
