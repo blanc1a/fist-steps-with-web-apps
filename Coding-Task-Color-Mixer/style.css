@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 2rem 1rem;
+}
+
+#color-value {
+  margin-left: auto;
+  font-size: 2rem;
+}
+
+input#red {
+  /*accent-color => legt die Akzentfarbe für Benutzeroberflächensteuerelemente fest, die von bestimmten Elementen generiert werden*/
+  accent-color: red;
+}
+
+input#green {
+  accent-color: green;
+}
+
+input#blue {
+  accent-color: blue;
+}
+
+label {
+  font-size: 2rem;
+}
